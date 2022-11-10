@@ -86,17 +86,9 @@
                 <div class="col-lg-4 col-sm-12">
                     <div class="order-box">
                         <h3>Ringkasan Pesanan</h3>
-                        <div class="d-flex">
-                            <h4>Sub Total</h4>
-                            <div class="ml-auto font-weight-bold">Rp {{ $subtotal }} </div>
-                        </div>
-                        <div class="d-flex">
-                            <h4>Shipping Cost</h4>
-                            <div class="ml-auto font-weight-bold"> Free </div>
-                        </div>
                         <hr>
                         <div class="d-flex gr-total">
-                            <h5>Grand Total</h5>
+                            <h5>Total</h5>
                             <div class="ml-auto h5"> Rp {{ $subtotal }} </div>
                         </div>
                         <hr> </div>

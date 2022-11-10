@@ -21,7 +21,6 @@ Route::get('/', function () {
     return view('home', compact('produk'));
 })->name('home');
 
-Route::get('/cart', [KeranjangController::class, 'index'])->name('cart');
 
 Route::get('/detail/{id}', function ($id) {
     $produk = Produk::find($id);
@@ -29,6 +28,7 @@ Route::get('/detail/{id}', function ($id) {
 })->name('detail');
 
 Route::middleware('auth')->group(function(){
+    Route::get('/cart', [KeranjangController::class, 'index'])->name('cart');
     Route::get('cart/tambah/{id}', [KeranjangController::class, 'tambah'])->name('cart.tambah');
     Route::get('cart/simpan', [KeranjangController::class, 'simpan'])->name('cart.simpan');
     Route::get('bayar/{token}', [KeranjangController::class, 'bayar'])->name('bayar');

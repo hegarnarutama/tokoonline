@@ -16,9 +16,8 @@
                     <div class="collapse navbar-collapse" id="navbar-menu">
                         <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                             <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Beranda</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ route('home') }}#kategori">Kategori</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('home') }}#produk">Produk</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('home') }}#tentang-kami">Tentang Kami</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ route('home') }}#galeri">Galeri</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->

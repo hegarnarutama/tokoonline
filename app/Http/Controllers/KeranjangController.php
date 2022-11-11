@@ -36,11 +36,19 @@ class KeranjangController extends Controller
 
     public function tambah($id)
     {
-        $keranjang = new Keranjang();
-        $keranjang->user_id = auth()->user()->id;
-        $keranjang->produk_id = $id;
-        $keranjang->jumlah = 1;
-        $keranjang->save();
+        $keranjang = Keranjang::where('user_id', auth()->user()->id)
+                    ->where('produk_id', $id)
+                    ->first();
+        if($keranjang){
+            $keranjang->jumlah = $keranjang->jumlah + 1;
+            $keranjang->save();
+        } else {
+            $keranjang = new Keranjang();
+            $keranjang->user_id = auth()->user()->id;
+            $keranjang->produk_id = $id;
+            $keranjang->jumlah = 1;
+            $keranjang->save();
+        }
 
         return redirect()->route('home');
     }

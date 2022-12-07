@@ -9,7 +9,7 @@
                             <div class="footer-top-box">
                                 <h3>Jam Buka</h3>
                                 <ul class="list-time">
-                                    <li>Monday - Friday: 08.00am to 05.00pm</li> <li>Saturday: 10.00am to 08.00pm</li> <li>Sunday: <span>Closed</span></li>
+                                    <li>Senin - Minggu: 07.00am to 20.00pm</li> 
                                 </ul>
                             </div>
                         </div>
@@ -20,7 +20,7 @@
                             <div class="footer-link-contact" style="margin-top: -1.15rem">
                                 <ul>
                                     <li>
-                                        <p><i class="fas fa-map-marker-alt"></i>Lokasi: Michael I. Days 3756 <br>Preston Street Wichita,<br> KS 67213 </p>
+                                        <p><i class="fas fa-map-marker-alt"></i>Lokasi: Ngelosari, purbowinangun, <br>Pakem,Sleman,<br> Yogyakarta </p>
                                     </li>
                                     <li>
                                         <p><i class="fas fa-phone-square"></i>Telepon: <a href="tel:+1-888705770">085157688255</a></p>
@@ -34,7 +34,7 @@
                         <div class="col-lg-4 col-md-12 col-sm-12">
                             <div class="footer-top-box">
                                 <h3>Media Sosial</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Facebook, Instagram, Whatsap.</p>
                                 <ul>
                                     <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>

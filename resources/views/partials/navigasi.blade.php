@@ -28,7 +28,12 @@
                             <li>
                                 <a href="{{ route('cart') }}" class="d-flex align-items-center">
                                     <i class="fa fa-shopping-bag mr-2"></i>
-                                    <span class="badge"></span>
+                                    @auth
+                                    @php
+                                        $cart = App\Models\Keranjang::where('user_id', auth()->user()->id)->where('status', 'pending')->count();
+                                    @endphp
+                                        <span class="badge">{{ $cart }}</span>
+                                    @endauth
                                     <p>Keranjang</p>
                                 </a>
                             </li>
@@ -41,6 +46,12 @@
                                     </svg>
                                 </a>
                                 <ul class="dropdown-menu" style="margin-left: -50px">
+                                    <li>
+                                        <a href="{{ route('pesanan') }}">Pesanan</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('retur') }}">Pengembalian Pesanan</a>
+                                    </li>
                                     <li>
                                         <form action="{{ route('logout') }}" method="post" id="logout-form">
                                             @csrf

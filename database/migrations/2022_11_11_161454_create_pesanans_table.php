@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('pesanans', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('keranjang_id');
             $table->string('alamat');
             $table->timestamps();
         });

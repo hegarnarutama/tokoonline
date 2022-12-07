@@ -44,14 +44,19 @@
                             <li>
                                 <div class="form-group quantity-box">
                                     <label class="control-label">Jumlah</label>
-                                    <input class="form-control" value="1" min="1" max="20" type="number">
+                                    <input class="form-control" value="1" min="1" max="20" type="number" id="jml">
                                 </div>
                             </li>
                         </ul>
 
                         <div class="price-box-bar">
                             <div class="cart-and-bay-btn">
-                                <a class="btn hvr-hover" data-fancybox-close="" href="{{ route('cart.tambah', ['id' => $produk->id]) }}">Tambah Keranjang</a>
+                                <form action="{{ route('cart.tambah') }}" method="post" id="cart-tambah">
+                                    @csrf
+                                    <input type="hidden" name="jumlah" value="1">
+                                    <input type="hidden" name="produk_id" value="{{ $produk->id }}">
+                                </form>
+                                <a class="btn hvr-hover text-white" data-fancybox-close="" onclick="cart()">Tambah Keranjang</a>
                             </div>
                         </div>
                     </div>
@@ -61,4 +66,15 @@
         </div>
     </div>
     <!-- End Cart -->
+
+    <script>
+        $(document).ready(function(){
+            $('#jml').change(() => {
+                $('input[name=jumlah]').val($('#jml').val());
+            })
+        })
+        function cart(){
+            document.querySelector('#cart-tambah').submit();
+        }
+    </script>
 @endsection

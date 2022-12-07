@@ -26,6 +26,8 @@ class AdminProdukController extends Controller
         $produk = new Produk();
         $produk->nama = $request->nama;
         $produk->harga = $request->harga;
+        $produk->stok = $request->stok;
+        $produk->berat = $request->berat;
         $produk->deskripsi = $request->deskripsi;
         $produk->kategori = $request->kategori;
         if($request->has('image')){
@@ -42,6 +44,8 @@ class AdminProdukController extends Controller
         $produk = Produk::find($request->id);
         $produk->nama = $request->nama;
         $produk->harga = $request->harga;
+        $produk->stok = $request->stok;
+        $produk->berat = $request->berat;
         $produk->deskripsi = $request->deskripsi;
         $produk->kategori = $request->kategori;
         if($request->has('image')){

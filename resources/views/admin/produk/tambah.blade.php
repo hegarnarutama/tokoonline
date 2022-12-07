@@ -12,11 +12,19 @@
                 @csrf
                 <div class="row form-group">
                     <div class="col col-md-3"><label for="text-input" class=" form-control-label">Nama Produk</label></div>
-                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="nama" placeholder="Text" class="form-control"><small class="form-text text-muted">This is a help text</small></div>
+                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="nama" placeholder="Text" class="form-control"></div>
                 </div>
                 <div class="row form-group">
                     <div class="col col-md-3"><label for="text-input" class=" form-control-label">Harga Produk</label></div>
-                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="harga" placeholder="Text" class="form-control"><small class="form-text text-muted">This is a help text</small></div>
+                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="harga" placeholder="Text" class="form-control"></div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Stok Produk</label></div>
+                    <div class="col-12 col-md-9"><input type="number" id="text-input" name="stok" placeholder="Text" class="form-control"></div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Berat Produk</label></div>
+                    <div class="col-12 col-md-9"><input type="number" id="text-input" name="berat" placeholder="Text" class="form-control"></div>
                 </div>
                 <div class="row form-group">
                     <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Deskripsi</label></div>

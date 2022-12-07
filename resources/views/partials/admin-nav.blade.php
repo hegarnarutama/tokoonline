@@ -17,14 +17,17 @@
                 <li class="{{ Request::is('admin/produk') ? 'active' : '' }}">
                     <a href="{{ route('admin.produk') }}"> <i class="menu-icon fa fa-cutlery"></i>Produk</a>
                 </li>
-                <li class="{{ Request::is('admin') ? 'active' : '' }}">
-                    <a href="{{ route('admin.produk') }}"> <i class="menu-icon fa fa-clipboard"></i>Pesanan</a>
+                <li class="{{ Request::is('admin/pesanan') ? 'active' : '' }}">
+                    <a href="{{ route('admin.pesanan') }}"> <i class="menu-icon fa fa-clipboard"></i>Pesanan</a>
                 </li>
-                <li class="{{ Request::is('admin/produk') ? 'active' : '' }}">
-                    <a href="{{ route('admin.produk') }}"> <i class="menu-icon fa fa-repeat"></i>Retur</a>
+                <li class="{{ Request::is('admin/retur') ? 'active' : '' }}">
+                    <a href="{{ route('admin.retur') }}"> <i class="menu-icon fa fa-repeat"></i>Retur</a>
                 </li>
-                <li class="{{ Request::is('admin/produk') ? 'active' : '' }}">
-                    <a href="{{ route('admin.produk') }}"> <i class="menu-icon fa fa-file"></i>Laporan</a>
+                <li class="{{ Request::is('admin/laporan/pesanan') ? 'active' : '' }}">
+                    <a href="{{ route('admin.laporan.pesanan') }}"> <i class="menu-icon fa fa-file"></i>Laporan Pesanan</a>
+                </li>
+                <li class="{{ Request::is('admin/laporan/retur') ? 'active' : '' }}">
+                    <a href="{{ route('admin.laporan.retur') }}"> <i class="menu-icon fa fa-file"></i>Laporan Retur</a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->

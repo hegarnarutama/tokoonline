@@ -2,7 +2,6 @@
 
 
 @section('content')
-    
         <!-- Start Slider -->
         <div id="slides-shop" class="cover-slides">
             <ul class="slides-container">
@@ -11,8 +10,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="m-b-20"><strong>Welcome To <br> Sekar Sari</strong></h1>
-                                <p class="m-b-40">See how your users experience your website in realtime or view <br> trends to see any changes in performance over time.</p>
+                                <h1 class="m-b-20"><strong>Selamat Datang di <br> SEKAR SARI</strong></h1>
+                                <p class="m-b-40">Kamu tau apa yang membuat Kebanggaan kami?  <br> Yaitu Kepuasan Anda.</p>
                             </div>
                         </div>
                     </div>
@@ -22,8 +21,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="m-b-20"><strong>Welcome To <br> Sekar Sari</strong></h1>
-                                <p class="m-b-40">See how your users experience your website in realtime or view <br> trends to see any changes in performance over time.</p>
+                                <h1 class="m-b-20"><strong>Selamat Datang di <br> SEKAR SARI</strong></h1>
+                                <p class="m-b-40">Kamu tau apa yang membuat Kebanggaan kami?  <br> Yaitu Kepuasan Anda.</p>
                             </div>
                         </div>
                     </div>
@@ -33,8 +32,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="m-b-20"><strong>Welcome To <br> Sekar Sari</strong></h1>
-                                <p class="m-b-40">See how your users experience your website in realtime or view <br> trends to see any changes in performance over time.</p>
+                                <h1 class="m-b-20"><strong>Selamat Datang di <br> SEKAR SARI</strong></h1>
+                                <p class="m-b-40">Kamu tau apa yang membuat Kebanggaan kami?  <br> Yaitu Kepuasan Anda.</p>
                             </div>
                         </div>
                     </div>
@@ -46,28 +45,16 @@
             </div>
         </div>
         <!-- End Slider -->
-    
         <!-- Start Products  -->
         <div class="products-box" id="produk">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="title-all text-center">
-                            <h1>Makanan & Minuman</h1>
+                            <h1>MAKANAN DAN MINUMAN</h1>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="special-menu text-center">
-                            <div class="button-group filter-button-group">
-                                <button class="active" data-filter="*">Makanan</button>
-                                <button data-filter="*">Minuman</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
                 <div class="row special-list">
                     @foreach ($produk as $item)
                     <div class="col-lg-3 col-md-6 special-grid best-seller">
@@ -89,7 +76,6 @@
             </div>
         </div>
         <!-- End Products  -->    
-        
         <div class="box-add-products" id="tentang-kami">
             <div class="container">
                 <!-- Start About Page  -->
@@ -97,7 +83,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="banner-frame"> <img class="img-fluid" src="images/about-img.jpg" alt="" />
+                                <div class="banner-frame"> <img class="img-fluid" src="images/Sekar Sari (1).jpg" alt="" />
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -106,30 +92,9 @@
                                 <p>Sekar Sari mempunyai Visi menjadi produsen makanan dan minuman terkemuka di indonesia dan Misi meningkatkan kualitas dan kuantitas produksi makanan dan minuman, menyediakan jajanan dengan varian yang unik dan menarik, memberikan pelayanan yang baik bagi para konsumen.</p>
                             </div>
                         </div>
-                        <div class="row my-5">
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="service-block-inner">
-                                    <h3>We are Trusted</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="service-block-inner">
-                                    <h3>We are Professional</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="service-block-inner">
-                                    <h3>We are Expert</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <!-- End About Page -->
             </div>
         </div>
-
 @endsection

@@ -37,8 +37,10 @@
                             <tbody>
                                 @php
                                     $subtotal = 0;
+                                    $ttl = 0;
                                 @endphp
                                 @foreach ($keranjang as $item)
+                                @if (isset($item->produk))
                                 <tr>
                                     <td class="thumbnail-img">
                                         <a href="#">
@@ -58,11 +60,16 @@
                                         <p>Rp {{ $ttl = $item->produk->harga * $item->jumlah }}</p>
                                     </td>
                                     <td class="remove-pr">
-                                        <a href="#">
+                                        <a href="{{ route('cart.hapus', ['id' => $item->id]) }}">
                                             <i class="fas fa-times"></i>
                                         </a>
                                     </td>
                                 </tr>
+                                @else
+                                <tr>
+                                    <td>Produk Tidak Tersedia</td>
+                                </tr>
+                                @endif
                                 @php
                                     $subtotal += $ttl;
                                 @endphp

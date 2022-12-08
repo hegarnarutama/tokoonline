@@ -20,6 +20,14 @@
                     <div class="col-12 col-md-9"><input type="text" id="text-input" name="harga" value="{{ $produk->harga }}" placeholder="Text" class="form-control"><small class="form-text text-muted">This is a help text</small></div>
                 </div>
                 <div class="row form-group">
+                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Stok Produk</label></div>
+                    <div class="col-12 col-md-9"><input type="number" id="text-input" name="stok"" value="{{ $produk->stok }}" placeholder="Text" class="form-control"></div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Berat Produk</label></div>
+                    <div class="col-12 col-md-9"><input type="number" id="text-input" name="berat"" value="{{ $produk->berat }}" placeholder="Text" class="form-control"></div>
+                </div>
+                <div class="row form-group">
                     <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Deskripsi</label></div>
                     <div class="col-12 col-md-9"><textarea name="deskripsi" id="textarea-input" rows="9" placeholder="Content..." class="form-control">{{ $produk->deskripsi }}</textarea></div>
                 </div>

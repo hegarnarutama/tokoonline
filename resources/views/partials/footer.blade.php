@@ -49,7 +49,7 @@
         <!-- End Footer  -->
     
         <!-- Start copyright  -->
-        <div class="footer-copyright">
+        <div class="footer-copyright cetak">
             <p class="footer-company">© Hegar Narutama Apri Andana</p>
         </div>
         <!-- End copyright  -->

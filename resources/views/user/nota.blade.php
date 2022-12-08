@@ -1,12 +1,22 @@
 @extends('layouts.main')
 
+@section('css')
+    <style>
+        @media print {
+            .cetak {
+                visibility: hidden;
+            }
+        }
+    </style>
+@endsection
+
 @section('content')
 
     <!-- Start Cart  -->
     <div class="cart-box-main">
         <div class="container">
             <div class="d-flex justify-content-end">
-                <button onclick="window.print()" class="btn btn-primary">print</button>
+                <button onclick="window.print()" class="btn btn-primary cetak">print</button>
             </div>
             <div class="card">
                 <div class="card-header">

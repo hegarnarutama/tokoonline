@@ -1,7 +1,7 @@
     
     
         <!-- Start Footer  -->
-        <footer>
+        <footer class="cetak">
             <div class="footer-main">
                 <div class="container">
                     <div class="row">

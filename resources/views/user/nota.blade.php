@@ -47,11 +47,22 @@
                               <td>{{ $item->keranjang->produk->harga }}</td>
                               <td>{{ $item->keranjang->produk->harga * $item->keranjang->jumlah }}</td>
                             </tr>
+                            @php
+                                $subtotal = $item->keranjang->produk->harga * $item->keranjang->jumlah;
+                            @endphp
                             @endforeach
                             <tr>
-                                <td colspan="5">Subtotal : {{ $subtotal }}</td>
-                                <td colspan="5">Ongkir : {{ $pesanan->ongkir }}</td>
-                                <td colspan="5">Total : {{ $pesanan->ongkir + $subtotal }}</td>
+                                <td colspan="5">
+                                    <div>
+                                        Subtotal : {{ $subtotal }}
+                                    </div>
+                                    <div>
+                                        Ongkir : {{ $pesanan->ongkir }}
+                                    </div>
+                                    <div>
+                                        Total : {{ $pesanan->ongkir + $subtotal }}
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

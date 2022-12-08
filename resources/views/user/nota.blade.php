@@ -52,7 +52,7 @@
                             @endphp
                             @endforeach
                             <tr>
-                                <td colspan="5">
+                                <td colspan="5" class="text-right">
                                     <div>
                                         Subtotal : {{ $subtotal }}
                                     </div>

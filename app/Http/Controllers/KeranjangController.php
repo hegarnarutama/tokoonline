@@ -110,7 +110,6 @@ class KeranjangController extends Controller
 
     public function tambah(Request $request)
     {
-      
         $keranjang = Keranjang::where('user_id', auth()->user()->id)
                     ->where('produk_id', $request->produk_id)
                     ->where('status', 'pending')

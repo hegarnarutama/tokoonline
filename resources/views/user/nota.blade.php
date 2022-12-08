@@ -37,6 +37,7 @@
                         <tbody>
                             @php
                                 $no = 1;
+                                $subtotal = 0;
                             @endphp
                             @foreach ($pesanan->detail as $item)
                             <tr>
@@ -47,6 +48,11 @@
                               <td>{{ $item->keranjang->produk->harga * $item->keranjang->jumlah }}</td>
                             </tr>
                             @endforeach
+                            <tr>
+                                <td colspan="5">Subtotal : {{ $subtotal }}</td>
+                                <td colspan="5">Ongkir : {{ $pesanan->ongkir }}</td>
+                                <td colspan="5">Total : {{ $pesanan->ongkir + $subtotal }}</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

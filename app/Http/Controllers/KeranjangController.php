@@ -73,24 +73,26 @@ class KeranjangController extends Controller
         $transaksi->total = $json->gross_amount;
         $transaksi->status_transaksi = $json->transaction_status;
         $transaksi->save();
+        
+        $data = json_decode($request->data);
+        $alamat = array(
+            'provinsi' => $data->provinsi,
+            'kota' => $data->kota,
+            'alamat' => $data->alamat,
+        );
+        $pesanan = new Pesanan();
+        $pesanan->nama = $data->nama;
+        $pesanan->alamat = json_encode($alamat);
+        $pesanan->no_hp = $data->hp;
+        $pesanan->kurir = $data->kurir;
+        $pesanan->ongkir = $data->ongkir;
+        $pesanan->status = $json->transaction_status;
+        $pesanan->order_id = $json->order_id;
+        $pesanan->save();
+        
         foreach($keranjang as $item){
             $item->status = 'checkout';
             $item->save();
-            $data = json_decode($request->data);
-            $alamat = array(
-                'provinsi' => $data->provinsi,
-                'kota' => $data->kota,
-                'alamat' => $data->alamat,
-            );
-            $pesanan = new Pesanan();
-            $pesanan->nama = $data->nama;
-            $pesanan->alamat = json_encode($alamat);
-            $pesanan->no_hp = $data->hp;
-            $pesanan->kurir = $data->kurir;
-            $pesanan->ongkir = $data->ongkir;
-            $pesanan->status = $json->transaction_status;
-            $pesanan->order_id = $json->order_id;
-            $pesanan->save();
 
             $detail = new PesananDetail();
             $detail->pesanan_id = $pesanan->id;

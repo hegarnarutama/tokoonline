@@ -5,6 +5,9 @@
     <!-- Start Cart  -->
     <div class="cart-box-main">
         <div class="container">
+            <div class="d-flex justify-content-end">
+                <button onclick="window.print()" class="btn btn-primary">print</button>
+            </div>
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between">

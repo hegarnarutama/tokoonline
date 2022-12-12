@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Produk;
 use App\Models\Pesanan;
 use App\Models\Keranjang;
 use App\Models\Transaksi;

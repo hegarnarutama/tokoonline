@@ -93,7 +93,6 @@ class KeranjangController extends Controller
         
         foreach($keranjang as $item){
             $item->status = 'checkout';
-            $item->save();
 
             $detail = new PesananDetail();
             $detail->pesanan_id = $pesanan->id;
@@ -105,6 +104,8 @@ class KeranjangController extends Controller
                 $produk->stok = $produk->stok - $item->jumlah;
                 $produk->save();
             }
+
+            $item->save();
         }
         return redirect()->route('nota', ['id' => $pesanan->order_id]);
     }

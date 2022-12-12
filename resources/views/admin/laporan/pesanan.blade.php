@@ -30,7 +30,7 @@
             @foreach ($pesanan as $item)
             <tr>
                 <th scope="row">{{ $no++; }}</th>
-                <td>{{ $item->detail[0]->keranjang->user->name }}</td>
+                <td>{{ $item->nama }}</td>
                 <td>{{ $item->no_hp }}</td>
                 <td>{{ $item->kurir }}</td>
                 @php

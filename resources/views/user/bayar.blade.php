@@ -3,7 +3,7 @@
 @section('css')
 <script type="text/javascript"
 src="https://app..midtrans.com/snap/snap.js"
-data-client-key="{{ env('Mid-client-k56gAysgUmNcUmqC') }}"></script>
+data-client-key="Mid-client-k56gAysgUmNcUmqC"></script>
 @endsection
 
 @section('content')

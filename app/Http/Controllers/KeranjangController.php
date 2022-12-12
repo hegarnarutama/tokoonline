@@ -98,6 +98,12 @@ class KeranjangController extends Controller
             $detail->pesanan_id = $pesanan->id;
             $detail->keranjang_id = $item->id;
             $detail->save();
+
+            if($json->transaction_status == 'settlement'){
+                $produk = Produk::find($item->produk_id);
+                $produk->stok = $produk->stok - $item->jumlah;
+                $produk->save();
+            }
         }
         return redirect()->route('nota', ['id' => $pesanan->order_id]);
     }

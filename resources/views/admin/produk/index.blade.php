@@ -23,6 +23,7 @@
                 <th scope="col">Nama Produk</th>
                 <th scope="col">Kategori</th>
                 <th scope="col">Harga</th>
+                <th scope="col">Stok</th>
                 <th scope="col">Deskripsi</th>
                 <th scope="col">Gambar</th>
                 <th scope="col">Aksi</th>
@@ -38,6 +39,7 @@
                 <td>{{ $item->nama }}</td>
                 <td>{{ $item->kategori }}</td>
                 <td>Rp{{ number_format($item->harga, 0, 0, '.') }}</td>
+                <td>{{ $item->stok }}</td>
                 <td>{{ substr($item->deskripsi, 0, 5) }}...</td>
                 <td>
                     <img src="{{ asset('produk/'.$item->gambar) }}" alt="" style="width: 80px;">

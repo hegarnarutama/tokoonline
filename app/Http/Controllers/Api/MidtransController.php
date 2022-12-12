@@ -12,9 +12,9 @@ class MidtransController extends Controller
         // Set your Merchant Server Key
         \Midtrans\Config::$serverKey = env('Mid-server-gy7heC4iDoJy79NpC2yD-NLO');
         // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
-        \Midtrans\Config::$isProduction = true;
+        \Midtrans\Config::$isProduction = TRUE;
         // Set sanitization on (default)
-        \Midtrans\Config::$isSanitized = true;
+        \Midtrans\Config::$isSanitized = false;
         // Set 3DS transaction for credit card to true
         \Midtrans\Config::$is3ds = false;
 
